@@ -1,0 +1,88 @@
+.wrap{
+    width: 60px;
+    height: 60px;
+    background: #fb9400;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+    transition: all 0.7s;
+}
+
+.main {
+    width: 40px;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+.active .main{
+    transform: scale(0) !important;
+}
+
+.wrap.active{
+    background: white;
+    box-shadow:  0 0 6px .1px black;
+}
+
+
+.change{
+    
+    position: relative;
+}
+
+.change svg{
+    width: 30px;
+    height: 30px;
+    transform: scale(0);
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    margin-top: 15px;
+    transition: all 0.5s;
+}
+
+
+.active .change svg{
+    transform: scale(.6);
+
+}
+
+
+.wrapper{
+    overflow: hidden;
+}
+
+
+.dropdown__item img{
+    width: 70px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -5px  ;
+    left: -5px;
+
+}
+
+
+
+.dropdown{
+    position: absolute;
+    
+    bottom: 0px;
+    left: 0px;
+    height: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+
+
+.wrap.active .dropdown{
+    height: 220%;
+    bottom: 80px;
+}

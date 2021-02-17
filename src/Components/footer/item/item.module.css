@@ -1,0 +1,24 @@
+.item{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background: white;
+    transition: 0.3s;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+.item img{
+    margin-right: 20px;
+    background: white;
+}
+
+
+.item:hover{
+    transform: rotate(-3deg);
+    color: #51cb51;
+}
+
